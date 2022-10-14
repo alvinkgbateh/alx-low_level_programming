@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -c $CFILE
+echo 'gcc $CFILE -0 clsfun'>> 3-name
