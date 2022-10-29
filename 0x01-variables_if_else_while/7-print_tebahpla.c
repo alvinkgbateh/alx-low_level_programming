@@ -1,15 +1,19 @@
 #include <stdio.h>
+
 /**
- *  * main-program entry point.
- *   * Return:0 if no errors, non zero if errors
- *    */
+ *main - Prints the alphabet at reverse
+ *
+ *Return: Always (Success)
+ *
+ */
+
 int main(void)
 {
-		char i;
-
-			for (i = 'z'; i >= 'a'; i--)
-						putchar(i);
-				putchar('\n');
-					return (0);
+char c;
+for (c = 'z'; c >= 'a'; c--)
+{
+putchar(c);
 }
-
+putchar('\n');
+return (0);
+}
