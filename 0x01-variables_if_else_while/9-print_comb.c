@@ -1,26 +1,25 @@
-#include <stdio.h>
+#include <stdio.h>
+
 /**
- *  *main-program entry point.
- *   *Return:0 success, non zero error.
- *    */
+ *main - Prints a serie of numbers with commas
+ *
+ *Return: Always (Success);
+ *
+ */
+
 int main(void)
+
 {
-		int num;
-
-			for (num = '0'; num <= '9'; num++)
-					{
-								putchar(num);
-										if (num == '9')
-													{
-																	break;
-																			}
-												else
-															{
-																			putchar(',');
-																						putchar(' ');
-																								}
-													}
-				putchar('\n');
-					return (0);
+int c;
+for (c = '0'; c <= '9'; c++)
+{
+putchar(c);
+if (c != '9')
+{
+putchar(',');
+										putchar(' ');
 }
-
+}
+putchar('\n');
+return (0);
+}
