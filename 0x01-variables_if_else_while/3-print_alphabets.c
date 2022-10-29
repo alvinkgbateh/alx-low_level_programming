@@ -1,23 +1,29 @@
 #include <stdio.h>
 
-/**
- *  *main-program entry point.
- *   *Return:0 no error, non zero if error.
- *    **/
-int main(void)
-{
-		char i;
-			char j;
 
-				for (i = 'a'; i <= 'z'; i++)
-						{
-									putchar(i);
-										}
-					for (j = 'A'; j <= 'Z'; j++)
-							{
-										putchar(j);
-											}
-						putchar('\n');
-							return (0);
+
+/**
+ * main - Prints the alphabetic in lower and upper case
+ *
+ *Return: Always (Success)
+ *
+ */
+
+int main(void)
+
+{
+char c;
+for (c = 'a'; c <= 'z'; c++)
+{
+putchar(c);
+}
+for (c = 'A'; c <= 'Z'; c++)
+{
+putchar(c);
+
 }
 
+putchar('\n');
+return (0);
+
+}
