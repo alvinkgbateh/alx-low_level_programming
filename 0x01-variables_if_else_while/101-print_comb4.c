@@ -1,37 +1,39 @@
 #include <stdio.h>
+
 /**
- *  * main-progrtam entry point
- *   * Return:0 success, non zero fail
- *    */
+ *main - Prints 3 combination of numbers
+ *
+ *Return: Always (Success)
+ *
+ */
+
 int main(void)
+
 {
-		int m, i, j;
+int c, i, k;
+for (c = '0'; c <= '9'; c++)
+{
+for (i = '0'; i <= '9'; i++)
+{
+for (k = '0'; k <= '9'; k++)
+{
+if (c < i && i < k)
+{
+putchar(c);
+putchar(i);
 
-			for (i = '0'; i <= '9'; i++)
-					{
-								for (j = '0'; j <= '9'; j++)
-											{
-															for (m = '0'; m <= '9'; m++)
-																			{
-																								if (i < j && j < m)
-																													{
-																																			putchar(i);
-																																								putchar(j);
-																																													putchar(m);
-																																																		if (i == '7' && j == '8' && m == '9')
-																																																								{
-																																																															break;
-																																																																				}
-																																																							else
-																																																													{
-																																																																				putchar(',');
-																																																																										putchar(' ');
-																																																																															}
-																																																											}
-                        			}
-																	}
-									}
-				putchar ('\n');
-								return (0);
+putchar(k);
+
+if (c != '7')
+{
+putchar(',');
+
+putchar(' ');
 }
-
+}
+}
+}
+}
+putchar('\n');
+return (0);
+}
