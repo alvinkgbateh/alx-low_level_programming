@@ -9,22 +9,22 @@
  */
 int main(void)
 {
-    char password[84];
-    int i, sum, diff;
+	char password[84];
+	int i, sum, diff;
 
-    srand(time(0));
+	srand(time(0));
 
-    for (i = 0, sum = 0; sum < 2772 - 122; i++)
-    {
-        password[i] = rand() % 94 + 33;
-        sum += password[i];
-    }
+	for (i = 0, sum = 0; sum < 2772 - 122; i++)
+	{
+		password[i] = rand() % 94 + 33;
+		sum += password[i];
+	}
 
-    diff = 2772 - sum;
-    password[i] = diff;
-    password[i + 1] = '\0';
+	diff = 2772 - sum;
+	password[i] = diff;
+	password[i + 1] = '\0';
 
-    printf("%s\n", password);
+	printf("%s\n", password);
 
-    return 0;
+	return (0);
 }
